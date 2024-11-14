@@ -118,6 +118,9 @@
 
         private void DisplayEmployeeData(EmployeeManager employee)
         {
+           
+            lblId.Text = employee.Id.ToString();
+            _employeeManager.Id = employee.Id; // Atribuir o ID corretamente
             lblId.Text = employee.Id.ToString();
             txtName.Text = employee.Name;
             txtMaskPhone.Text = employee.Phone;
@@ -200,6 +203,5 @@
                 ResetFormState();
             }
         }
-
     }
 }

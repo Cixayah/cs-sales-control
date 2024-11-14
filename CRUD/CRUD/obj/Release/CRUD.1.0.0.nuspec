@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CRUD</id>
+    <version>1.0.0</version>
+    <authors>CRUD</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="28d3daae013afd50301bd7e46c98ce1492a51dd5" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="MySql.Data" version="9.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\CSharp\CRUD\CRUD\bin\Release\net8.0-windows\CRUD.runtimeconfig.json" target="lib\net8.0-windows7.0\CRUD.runtimeconfig.json" />
+    <file src="C:\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\CSharp\CRUD\CRUD\bin\Release\net8.0-windows\CRUD.dll" target="lib\net8.0-windows7.0\CRUD.dll" />
+  </files>
+</package>

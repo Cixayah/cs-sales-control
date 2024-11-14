@@ -1,0 +1,11 @@
+CREATE TABLE employee (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255),
+    Phone VARCHAR(20),
+    Email VARCHAR(255),
+    Address VARCHAR(255),
+    Number VARCHAR(10),
+    Neighborhood VARCHAR(100),
+    Rg VARCHAR(20),
+    Cpf VARCHAR(14)
+);

@@ -1,0 +1,17 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/CRUD/.vs
+/CRUD/CRUD/obj/Debug/net8.0-windows/CRUD.AssemblyInfo.cs
+/CRUD/CRUD/obj/Debug/net8.0-windows/CRUD.AssemblyInfoInputs.cache
+/CRUD/CRUD/obj/Debug/net8.0-windows/CRUD.assets.cache
+*.json
+/CRUD/CRUD/obj/Debug/net8.0-windows/CRUD.GeneratedMSBuildEditorConfig.editorconfig
+/CRUD/CRUD/obj/Debug/net8.0-windows/CRUD.csproj.AssemblyReference.cache
+secrets.json
+DatabaseManager.cs
+CRUD/CRUD/DatabaseManager.cs
+CRUD/CRUD/DatabaseManager.cs
+CRUD/CRUD/DatabaseManager.cs

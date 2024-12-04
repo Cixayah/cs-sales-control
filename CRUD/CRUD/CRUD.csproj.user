@@ -4,7 +4,7 @@
     <_LastSelectedProfileId>C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="DataGridView.cs">
+    <Compile Update="Customers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Employees.cs">

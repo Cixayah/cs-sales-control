@@ -15,6 +15,8 @@ namespace CRUD
             empWindow.Show();
         }
 
+
+
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
@@ -28,8 +30,8 @@ namespace CRUD
 
         private void clientesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            DataGridView dgvWindow = new DataGridView();
-            dgvWindow.Show();
+            Customers customersWindow = new Customers();
+            customersWindow.Show();
         }
 
         // Método para verificar a conexão com o banco de dados

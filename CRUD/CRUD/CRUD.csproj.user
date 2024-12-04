@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
+    <Compile Update="DataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Employees.cs">
       <SubType>Form</SubType>
     </Compile>

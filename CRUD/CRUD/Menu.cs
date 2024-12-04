@@ -26,6 +26,12 @@ namespace CRUD
             // Chama o método que verifica a conexão com o banco de dados quando o formulário é carregado
         }
 
+        private void clientesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            DataGridView dgvWindow = new DataGridView();
+            dgvWindow.Show();
+        }
+
         // Método para verificar a conexão com o banco de dados
 
     }

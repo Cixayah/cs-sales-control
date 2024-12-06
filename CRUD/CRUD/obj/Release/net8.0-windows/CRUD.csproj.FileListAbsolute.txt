@@ -17,7 +17,7 @@ C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-con
 C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\bin\Release\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
 C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\bin\Release\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\obj\Release\net8.0-windows\CRUD.csproj.AssemblyReference.cache
-C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\obj\Release\net8.0-windows\CRUD.DataGridView.resources
+C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\obj\Release\net8.0-windows\CRUD.Customers.resources
 C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\obj\Release\net8.0-windows\CRUD.Employees.resources
 C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\obj\Release\net8.0-windows\CRUD.MainWindow.resources
 C:\OneDrive\OneDrive - DESCOMPLICA CURSOS LIVRES VIA WEB S.A\Github\cs-sales-control\CRUD\CRUD\obj\Release\net8.0-windows\CRUD.Properties.Resources.resources

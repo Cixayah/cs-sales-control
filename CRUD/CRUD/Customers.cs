@@ -25,15 +25,14 @@ namespace CRUD
                 using (var connection = new MySqlConnection(DatabaseConnection.ConnectionString))
                 {
                     connection.Open();
-
-                    string query = "SELECT name, cpf FROM employee"; // Adjust column names as needed
+                    string query = "SELECT name as Nome, cpf as CPF FROM employee";
                     using (var adapter = new MySqlDataAdapter(query, connection))
                     {
                         DataTable dt = new DataTable();
                         adapter.Fill(dt);
-
                         dataGridViewCustomers.DataSource = dt;
                     }
+                    connection.Close(); // Fechamento explícito da conexão
                 }
             }
             catch (Exception ex)

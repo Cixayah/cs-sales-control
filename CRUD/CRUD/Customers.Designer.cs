@@ -35,17 +35,19 @@
             // 
             // dataGridViewCustomers
             // 
+            dataGridViewCustomers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCustomers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCustomers.Location = new Point(12, 25);
+            dataGridViewCustomers.Location = new Point(14, 29);
             dataGridViewCustomers.Name = "dataGridViewCustomers";
-            dataGridViewCustomers.Size = new Size(776, 209);
+            dataGridViewCustomers.ReadOnly = true;
+            dataGridViewCustomers.Size = new Size(887, 274);
             dataGridViewCustomers.TabIndex = 0;
             // 
             // btnLoadCustomers
             // 
-            btnLoadCustomers.Location = new Point(588, 243);
+            btnLoadCustomers.Location = new Point(355, 309);
             btnLoadCustomers.Name = "btnLoadCustomers";
-            btnLoadCustomers.Size = new Size(173, 23);
+            btnLoadCustomers.Size = new Size(198, 27);
             btnLoadCustomers.TabIndex = 1;
             btnLoadCustomers.Text = "Carregar clientes";
             btnLoadCustomers.UseVisualStyleBackColor = true;
@@ -53,13 +55,14 @@
             // 
             // Customers
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 510);
             Controls.Add(btnLoadCustomers);
             Controls.Add(dataGridViewCustomers);
+            Font = new Font("Cascadia Mono", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "Customers";
-            Text = "DataGridView";
+            Text = "Lista de Clientes";
             ((System.ComponentModel.ISupportInitialize)dataGridViewCustomers).EndInit();
             ResumeLayout(false);
         }

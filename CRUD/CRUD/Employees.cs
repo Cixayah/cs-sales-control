@@ -10,6 +10,8 @@
             InitializeComponent();
             _employeeManager = new EmployeeManager();
             ConfigureInitialState();
+            txtSearch.KeyDown += txtSearch_KeyDown;
+
         }
 
         private void ConfigureInitialState()
@@ -64,6 +66,20 @@
             else
             {
                 ResetFormState();
+            }
+        }
+
+        private void txtSearch_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                // Chama o mesmo método de pesquisa do botão
+                //btnSearch_Click(sender, e);
+                btnSearch.PerformClick();
+
+                // Evita que o "Enter" faça um som de beep ou cause outros comportamentos padrão
+                //e.Handled = true;
+                e.SuppressKeyPress = true;
             }
         }
 

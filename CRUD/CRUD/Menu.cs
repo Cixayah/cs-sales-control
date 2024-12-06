@@ -34,6 +34,7 @@ namespace CRUD
             customersWindow.Show();
         }
 
+
         // Método para verificar a conexão com o banco de dados
 
     }

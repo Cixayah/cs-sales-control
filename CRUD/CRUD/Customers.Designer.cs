@@ -36,16 +36,19 @@
             // dataGridViewCustomers
             // 
             dataGridViewCustomers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCustomers.BorderStyle = BorderStyle.None;
             dataGridViewCustomers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCustomers.Location = new Point(14, 29);
+            dataGridViewCustomers.Dock = DockStyle.Top;
+            dataGridViewCustomers.ImeMode = ImeMode.NoControl;
+            dataGridViewCustomers.Location = new Point(0, 0);
             dataGridViewCustomers.Name = "dataGridViewCustomers";
             dataGridViewCustomers.ReadOnly = true;
-            dataGridViewCustomers.Size = new Size(887, 274);
+            dataGridViewCustomers.Size = new Size(784, 420);
             dataGridViewCustomers.TabIndex = 0;
             // 
             // btnLoadCustomers
             // 
-            btnLoadCustomers.Location = new Point(355, 309);
+            btnLoadCustomers.Location = new Point(298, 492);
             btnLoadCustomers.Name = "btnLoadCustomers";
             btnLoadCustomers.Size = new Size(198, 27);
             btnLoadCustomers.TabIndex = 1;
@@ -57,11 +60,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 510);
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(784, 561);
             Controls.Add(btnLoadCustomers);
             Controls.Add(dataGridViewCustomers);
             Font = new Font("Cascadia Mono", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MinimizeBox = false;
             Name = "Customers";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Lista de Clientes";
             ((System.ComponentModel.ISupportInitialize)dataGridViewCustomers).EndInit();
             ResumeLayout(false);

@@ -157,12 +157,24 @@ namespace CRUD
                 conn.Open();
 
                 const string select = @"
-                    SELECT Id, name, phone, email, address, number, neighborhood, rg, cpf
-                    FROM employee 
-                    WHERE name LIKE @searchTerm OR cpf = @searchTerm";
+            SELECT Id, name, phone, email, address, number, neighborhood, rg, cpf
+            FROM employee 
+            WHERE name LIKE @searchName 
+               OR id = @searchId 
+               OR REPLACE(REPLACE(REPLACE(cpf, '.', ''), '-', ''), ' ', '') LIKE @searchCpf";
+
+                // Verifica se o termo de busca pode ser convertido para inteiro (ID)
+                int parsedId = -1;
+                bool isNumeric = int.TryParse(searchTerm, out parsedId);
+
+                // Remove os caracteres de formatação do CPF digitado pelo usuário
+                string cleanedCpf = searchTerm.Replace(".", "").Replace("-", "").Replace(" ", "");
 
                 using var sqlCommand = CreateMySqlCommand(select, conn,
-                    new MySqlParameter("@searchTerm", $"%{searchTerm}%"));
+                    new MySqlParameter("@searchName", $"%{searchTerm}%"),
+                    new MySqlParameter("@searchId", isNumeric ? parsedId : -1),
+                    new MySqlParameter("@searchCpf", $"%{cleanedCpf}%")); // Busca CPF sem formatação
+
                 using var reader = sqlCommand.ExecuteReader();
 
                 if (!reader.HasRows)
@@ -194,6 +206,7 @@ namespace CRUD
                 return null;
             }
         }
+
 
         public bool DeleteEmployee()
         {

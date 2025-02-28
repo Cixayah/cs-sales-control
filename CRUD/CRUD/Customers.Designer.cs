@@ -43,7 +43,7 @@
             dataGridViewCustomers.Location = new Point(0, 0);
             dataGridViewCustomers.Name = "dataGridViewCustomers";
             dataGridViewCustomers.ReadOnly = true;
-            dataGridViewCustomers.Size = new Size(784, 420);
+            dataGridViewCustomers.Size = new Size(784, 486);
             dataGridViewCustomers.TabIndex = 0;
             // 
             // btnLoadCustomers
@@ -65,10 +65,11 @@
             Controls.Add(btnLoadCustomers);
             Controls.Add(dataGridViewCustomers);
             Font = new Font("Cascadia Mono", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MinimizeBox = false;
             Name = "Customers";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Lista de Clientes";
+            Text = "Customers";
             ((System.ComponentModel.ISupportInitialize)dataGridViewCustomers).EndInit();
             ResumeLayout(false);
         }
